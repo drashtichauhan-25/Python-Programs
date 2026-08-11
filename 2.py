@@ -1,3 +1,5 @@
+#Write a program to illustrate the use of different data types and type casting. 
+
 value1= 50
 value2=6.9
 value4='drashti'
