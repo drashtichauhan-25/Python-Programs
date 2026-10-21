@@ -1,11 +1,18 @@
-# Generate numbers using generator function
 
-def generate_numbers(n):
-    for i in range(1, n + 1):
-        yield i
+f = open("demo.txt", "w")
+f.write("ABCDEFGHIJ")
+f.close()
 
-# Function call
-numbers = generate_numbers(5)
+f = open("demo.txt", "r")
 
-for num in numbers:
-    print(num)
+print("Position:", f.tell())
+
+print("Data:", f.read(3))
+print("Position:", f.tell())
+
+f.seek(5)
+print("After seek:", f.tell())
+
+print("Remaining Data:", f.read())
+
+f.close()
